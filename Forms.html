@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <h2>HTML Forms</h2>
+    <h3>Registration Form</h3>
+    <form action="" method="POST">
+        <!-- Input fields -->
+       <label for="name">Full Name: </label><input type="text" name="name" id="name" placeholder="Enter Your Name"/><br/>
+       <label for="password">Password: </label><input type="password" name="password" id="password" placeholder="Enter Your Password"/><br/>
+       <lable for="email">Email: </lable><input type="email" id="email"placeholder="Enter Your Email"/><br/>
+       <label>Upload File Here: </label><input type="file">
+       
+       <!-- TextArea -->
+       <p>Please Enter Your Feedback</p>
+       <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea><br/>
+
+       <!-- Radio Buttons -->
+       <p>Plesae Select Your Gender</p>
+       <input type="radio" name="gender" value="male" id="">Male
+       <input type="radio" name="gender" value="female" id="">FeMale
+       <input type="radio" name="gender" value="others" id="">Others
+       <br/>
+
+       <!-- checkboxs -->
+        <p>Please Select Languages</p>
+        <input type="checkbox" name="programming" id="" value="java" checked>Java
+        <input type="checkbox" name="programming" id="" value="python">Python
+        <input type="checkbox" name="programming" id="" value=".net">.Net
+        <input type="checkbox" name="programming" id="" value="php">php
+
+        <!-- Selete Tag -->
+        <lable>Select Any Language: </lable>
+        <select name="Languages" id="">
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+            <option value=".net">.Net</option>
+            <option value="php">Php</option>
+        </select>
+        <br/>
+
+        <!-- fieldset Tag -->
+        <fieldset>
+            <legend>Languages Known</legend><br/>
+            <lable for="firstLan">First Language</lable>
+            <input type="text" name="fname" id="fname" placeholder="eg. English, Telugu, etc.."><br/><br/>
+            <lable for="secondLan">Second Language</lable>
+            <input type="text" name="sname" id="sname" placeholder="eg. English, Telugu, etc..">
+        </fieldset>
+        <br/>
+
+       <!-- <input type="submit" /> -->
+       <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
